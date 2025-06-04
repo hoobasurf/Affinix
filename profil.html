@@ -12,14 +12,10 @@
 
     <form action="salles.html" method="get" class="profil-form">
       <label for="prenom">Ton prénom :</label>
-      <input type="text" id="prenom" name="prenom" required placeholder="Ex: Neela">
+      <input type="text" id="prenom" name="prenom" required placeholder="Ex: Neela" />
 
-      <label>Choisis ton avatar :</label>
-      <div class="avatars">
-        <label><input type="radio" name="avatar" value="avatar1" required><img src="images/avatar1.jpg" alt="avatar1" /></label>
-        <label><input type="radio" name="avatar" value="avatar2"><img src="images/avatar2.jpg" alt="avatar2" /></label>
-        <label><input type="radio" name="avatar" value="avatar3"><img src="images/avatar3.jpg" alt="avatar3" /></label>
-      </div>
+      <label for="photo">Ajoute ta photo :</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required />
 
       <label>Choisis tes salles préférées :</label>
       <div class="salles-checkboxes">
