@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil - AFFINIX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="profil-page">
+  <div class="profil-container">
+    <h1>Crée ton profil magique</h1>
+
+    <form action="salles.html" method="get" class="profil-form">
+      <label for="prenom">Ton prénom :</label>
+      <input type="text" id="prenom" name="prenom" required placeholder="Ex: Neela">
+
+      <label>Choisis ton avatar :</label>
+      <div class="avatars">
+        <label><input type="radio" name="avatar" value="avatar1" required><img src="images/avatar1.jpg" alt="avatar1" /></label>
+        <label><input type="radio" name="avatar" value="avatar2"><img src="images/avatar2.jpg" alt="avatar2" /></label>
+        <label><input type="radio" name="avatar" value="avatar3"><img src="images/avatar3.jpg" alt="avatar3" /></label>
+      </div>
+
+      <label>Choisis tes salles préférées :</label>
+      <div class="salles-checkboxes">
+        <label><input type="checkbox" name="salles" value="amicale" /> Rencontre Amicale</label>
+        <label><input type="checkbox" name="salles" value="serieuse" /> Relation Sérieuse</label>
+        <label><input type="checkbox" name="salles" value="fun" /> Rencontre Fun</label>
+        <label><input type="checkbox" name="salles" value="parents" /> Parents</label>
+        <label><input type="checkbox" name="salles" value="passions" /> Univers Passions</label>
+        <label><input type="checkbox" name="salles" value="createur" /> Connexion Unique</label>
+      </div>
+
+      <button type="submit" class="btn-entrer">Valider mon profil</button>
+    </form>
+  </div>
+</body>
+</html>
