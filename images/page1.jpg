@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Affinix - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="images/page1.jpg" alt="Page d'accueil" class="background-image"/>
+    <div class="overlay-text">
+      <h1>Bienvenue dans AFFINIX</h1>
+      <a href="page2.html" class="enter-button">Entrer</a>
+    </div>
+  </div>
+</body>
+</html>
