@@ -1,40 +1,74 @@
-body, html {
+body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Arial', sans-serif;
-}
-
-.welcome-screen {
-  background: url("images/page1.jpg") no-repeat center center fixed;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
   color: white;
-  padding: 40px;
-  border-radius: 20px;
 }
 
-.enter-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 18px;
-  background-color: #ff66cc;
+.profil-page {
+  backdrop-filter: blur(6px);
+  padding: 20px;
+}
+
+.profil-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(255, 0, 170, 0.5);
+}
+
+.profil-container h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #ffccff;
+  margin-bottom: 30px;
+}
+
+.profil-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffd6ff;
+}
+
+.profil-form input[type="text"],
+.profil-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.salles-checkboxes {
+  margin-bottom: 20px;
+}
+
+.salles-checkboxes label {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffe6ff;
+}
+
+.btn-entrer {
+  background: linear-gradient(45deg, #ff66cc, #cc33ff);
   color: white;
   border: none;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: background 0.3s ease;
+  padding: 12px 20px;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.enter-button:hover {
-  background-color: #ff3399;
+.btn-entrer:hover {
+  background: linear-gradient(45deg, #cc33ff, #ff66cc);
+  transform: scale(1.03);
 }
